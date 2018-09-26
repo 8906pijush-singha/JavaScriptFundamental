@@ -1,4 +1,13 @@
-//chainnig function
+/*************************************************************************
+ * @ purpose :function chaining simple example
+ * @author  Pijush Singha
+ * @version 1.0
+ * @since 25/09/2018
+ *************************************************************************/
+/*
+fullname is the function which hold three other function and all of them 
+returns same function obj
+*/ 
 var FullName=function(){
     var name;
     this.firstName=function(firstName){
@@ -18,4 +27,7 @@ var FullName=function(){
     }
 };
 var person=new FullName();
+/*
+showing the function chaning 
+*/
 person.firstName('Sourav').middleName('Chandidas').lastName('Gangully').print();
