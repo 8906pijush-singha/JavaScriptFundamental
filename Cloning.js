@@ -23,3 +23,4 @@ console.log(pen);
 console.log(clone);
 console.log(pen.func());
 console.log(clone.func());
+console.log(clone.func());
