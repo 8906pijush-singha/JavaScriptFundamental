@@ -27,6 +27,6 @@ var spiceUp=function(fn,...n){
 var addToAvg=spiceUp(avg,1,2,3,4);//reducing the arity
 var result=addToAvg(5,6,7,8);
 /*
-printing the result to the cinsole
+printing the result to the console
 */
 console.log(result);
