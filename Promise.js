@@ -51,7 +51,7 @@ var firstPromise=function(i){
 first firstPromise will execute then first() and then Second and
 goes on until response comes
 */
-firstPromise(-3).then(first).then(second).then(third).then(function(response)
+firstPromise(-5).then(first).then(second).then(third).then(function(response)
 {
     console.log(response);
 }).catch(function(err){
@@ -62,13 +62,16 @@ these are my 3 methods which needs to execute in order
 */
 function first(value){
     value=value*10;
+    console.log(value);
     return value;
 }
 function second(value){
     value=value+5;
+    console.log(value);
     return value;
 }
 function third(value){
     value=value/10;
+    console.log(value);
     return value;
 }
